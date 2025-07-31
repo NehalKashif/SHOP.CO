@@ -24,9 +24,9 @@
 <body class="bg-black ">
     <p class="tag text-white font-thin text-center py-3">Sign up and get 20% off to your first order. <a href="#" class="underline font-semibold">Sign Up Now</a> <button class="close fixed right-20 text-xl">X</button></p>
     <div class="landing bg-gray-100 mx-auto w-fit my-2">
-        <div class="nav bg-white flex justify-evenly items-center py-4">
+        <div class="nav bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4">
             <div class="logo text-black text-4xl titan-one-regular">SHOP.CO</div>
-            <div class="dropdown">
+            <div class="dropdown hidden lg:block">
                 <ul class="flex gap-5 font-thin text-gray-700 border-none ">
                     <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3">
                         <select name="#" class="border-none cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
@@ -42,7 +42,7 @@
                     <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3">Brands</li>
                 </ul>
             </div>
-            <div class="search font-thin text-gray-700 bg-gray-100 flex w-[30%] p-3 rounded-full">
+            <div class="search font-thin text-gray-700 bg-gray-100 flex w-[50%] lg:w-[30%] p-3 rounded-full">
                 <span class="material-symbols-outlined font-thin text-gray-700">search</span>
                 <input type="text" class="bg-gray-100 w-[100%] hover:border-none" placeholder="Search for Products...">
             </div>
@@ -51,12 +51,12 @@
                 <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400">account_circle</span>
             </div>
         </div>
-        <div class="flex pt-[2%] px-[6%]">
+        <div class="flex pt-[2%] px-[6%] gap-5">
             <div class="w-1/2 py-10">
-                <p class="text-[3.5rem] titan-one-regular w-[76%] leading-tight">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
+                <p class="text-[2.5rem] lg:text-[2.80rem] xl:text-[3.5rem] titan-one-regular w-[85%] lg:w-[76%] leading-tight">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
                 <p class="w-[80%] text-gray-500 py-2">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                 <button class="bg-black text-gray-100 font-thin my-2 py-3 px-12 rounded-full">Shop Now</button>
-                <div class="flex py-9 gap-16">
+                <div class="flex pt-9 flex-wrap lg:flex-nowrap max-lg:justify-evenly gap-10 xl:gap-16">
                     <div>
                         <h1 class="text-5xl text-black">200+</h1>
                         <p class="text-gray-500">International Brands</p>
@@ -72,15 +72,15 @@
                 </div>
             </div>
             <div class="w-1/2">
-                <img class="w-[80%]" src="Images/main.jpg" alt="">
+                <img class="w-[100%] h-[100%] xl:w-[100%]" src="Images/main.jpg" alt="">
             </div>
         </div>
-        <div class="flex bg-black items-center justify-evenly py-4">
-            <img src="Images/versace.jpg" alt="">
-            <img src="Images/zara.jpg" class="h-8" alt="">
-            <img src="Images/gucci.jpg" class="h-10" alt="">
-            <img src="Images/prada.jpg" class="h-10" alt="">
-            <img src="Images/ck.jpg" class="h-10" alt="">
+        <div class="flex lg:flex-nowrap gap-3 flex-wrap bg-black items-center justify-evenly py-4">
+            <img src="Images/versace.jpg" class="h-10 lg:py-0 py-1" alt="">
+            <img src="Images/zara.jpg" class="h-10 lg:py-0 py-1" alt="">
+            <img src="Images/gucci.jpg" class="h-10 lg:py-0 py-1" alt="">
+            <img src="Images/prada.jpg" class="h-10 lg:py-0 py-1" alt="">
+            <img src="Images/ck.jpg" class="h-10 lg:py-0 py-1" alt="">
         </div>
     </div>
     <script src="script.js"></script>
