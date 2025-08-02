@@ -18,3 +18,21 @@ close.addEventListener("click", () => {
     dropdown.classList.remove("top-[20%]")
     dropdown.classList.add("top-[-575%]")
 })
+
+
+let view = document.querySelector(".view")
+    
+view.addEventListener("click", () => {
+    let hide = document.querySelectorAll(".hide")
+    if(view.innerText === "View All"){
+        hide.forEach(element => {
+            element.classList.remove("hidden")
+            view.innerText ="Close"
+        });
+    }else{
+        hide.forEach(element => {
+            element.classList.add("hidden")
+            view.innerText ="View All"
+        })
+    }
+})
