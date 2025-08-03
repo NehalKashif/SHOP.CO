@@ -36,3 +36,21 @@ view.addEventListener("click", () => {
         })
     }
 })
+
+
+let topview = document.querySelector(".topview")
+    
+topview.addEventListener("click", () => {
+    let hide = document.querySelectorAll(".tophide")
+    if(topview.innerText === "View All"){
+        hide.forEach(element => {
+            element.classList.remove("hidden")
+            topview.innerText ="Close"
+        });
+    }else{
+        hide.forEach(element => {
+            element.classList.add("hidden")
+            topview.innerText ="View All"
+        })
+    }
+})
