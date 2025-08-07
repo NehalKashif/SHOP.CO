@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP.CO</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap" rel="stylesheet">
     <style>
+        
         body{
             font-family: Helvetica, Arial, sans-serif , roboto;
         }
@@ -18,6 +21,7 @@
               font-weight: 400;
               font-style: normal;
         }
+
         @media (max-width:460px) {
             .casual, .formal, .party, .gym{
                 flex-direction: column;
@@ -29,17 +33,15 @@
         }
     </style>
 </head>
-<body class="bg-black box-border overflow-x-hidden  m-0 p-0">
-    <p class="tag flex items-center text-white font-thin justify-center bg-black max-sm:text-[10px]">Sign up to get 20% off to your first order. <a href="#" class="underline font-semibold">Sign Up Now</a> <button class="close fixed right-5 sm:right-20 text-lg max-sm:text-[10px] items-center">X</button></p>
-    <div class="landing bg-gray-100 mx-auto w-full my-2">
-        <div class="nav sticky top-0 bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4 max-sm:px-[2%] w-full">
+<body class="bg-black  box-border overflow-x-hidden ">
+    <div class="nav sticky top-0 bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4 max-sm:px-[2%] w-full">
             <div class="flex items-center max-sm:pr-3">
                 <div class="lg:hidden lg:text-4xl">
                     <span class="material-symbols-outlined menu cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400 ">menu</span>
                 </div>
                 <div class="logo text-black text-3xl lg:text-4xl titan-one-regular">SHOP.CO</div>
             </div>
-            <div class="dropdown  transform duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 top-[-575%] lg:w-fit w-full flex items-center justify-center">
+            <div class="dropdown  transform duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 top-[-470%] lg:w-fit w-full flex items-center justify-center">
                 <ul class="flex lg:flex-row flex-col gap-5 font-thin text-gray-700 border-none ">
                     <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center">
                         <select name="#" class="border-none cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
@@ -69,6 +71,8 @@
                 </div>
             </div>
         </div>
+    <div class="landing bg-gray-100 mx-auto w-full">
+        
         <div class="flex md:flex-row flex-col max-md:justify-center pt-[2%] px-[6%] gap-5">
             <div class="w-full md:w-1/2 py-10">
                 <p class="text-[1.9rem] sm:text-[2.5rem] lg:text-[2.80rem] xl:text-[3.5rem] titan-one-regular w-[85%] lg:w-[76%] leading-tight">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
@@ -90,7 +94,7 @@
                 </div>
             </div>
             <div class="w-full md:w-1/2">
-                <img class="w-[100%] h-[100%] xl:w-[100%]" src="Images/main.jpg" alt="">
+                <img class="w-full h-full xl:w-[100%]" src="Images/main.png" alt="">
             </div>
         </div>
         <div class="flex lg:flex-nowrap gap-3 flex-wrap bg-black items-center justify-evenly py-4">
@@ -325,7 +329,7 @@
             <button class="cursor-pointer topview rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center border-[1px] border-gray-600">View All</button>
         </div>
     </div>
-    <div class="bg-white w-full dress-style py-6 sm:px-3 flex justify-center">
+    <div class="bg-white w-full dress-style py-10 sm:px-3 flex justify-center">
         <div class="w-full sm:w-[90%] lg:w-[85%] xl:w-2/3 flex flex-col items-center p-1 lg:p-4 xl:p-8  sm:m-5 bg-[#f2f2f2] rounded-3xl">
             <div class="text-center p-5 text-black text-2xl sm:text-3xl lg:text-4xl titan-one-regular">BROWSE BY DRESS STYLE</div> 
             <div class="w-full">
@@ -351,6 +355,79 @@
                 </div>
                 
             </div>      
+        </div>
+    </div>
+    <div class="w-full footer bg-[#f2f2f2] ">
+        <div class="w-full lg:w-[90%] xl:w-[80%] bg-black flex flex-col sm:flex-row  md:mx-auto px-8 md:px-14 py-6 rounded-2xl md:gap-[15%] 2xl:gap-[30%] items-center">
+            <div class="text-start w-full sm:w-1/2 text-white text-2xl sm:text-3xl p-2 titan-one-regular">
+                STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </div>
+            <div class="flex flex-col w-full sm:w-1/2 justify-end gap-4">
+                <div class="flex p-3 text-gray-400 bg-white rounded-full gap-3 w-full">
+                    <span class="material-symbols-outlined">mail</span>
+                    <input type="text" class="w-full" placeholder="Enter your email address">
+                </div>
+                <div class="flex p-3 text-gray-400 bg-white rounded-full gap-3 w-full">
+                    <button class="text-black mx-auto">Subscribe to Newsletter</button>
+                </div>
+            </div>
+        </div>
+        <div class="foot flex flex-col md:flex-row mx-auto w-full max-lg:px-5 lg:w-[90%] xl:w-[80%] py-8 gap-10 lg:gap-20">
+            <div class="w-full md:w-1/4 flex flex-col gap-8">
+                <div class="logo text-black text-3xl lg:text-3xl titan-one-regular ">SHOP.CO</div>
+                <div class="w-[80%] text-gray-600 text-sm">We have clothes that suits your style and which you’re proud to wear. From women to men.</div>
+                <div class="footicons flex justify-start gap-3">
+                    <div class="py-0.5 cursor-pointer hover:bg-black hover:text-white transfom hover:scale-150 duration-300 px-1.5 bg-white border-[1px] border-gray-600 rounded-full"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="py-0.5 cursor-pointer hover:bg-black hover:text-white transfom hover:scale-150 duration-300 px-2 bg-white border-[1px] border-gray-600 rounded-full"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="py-0.5 cursor-pointer hover:bg-black hover:text-white transfom hover:scale-150 duration-300 px-1.5 bg-white border-[1px] border-gray-600 rounded-full"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="py-0.5 cursor-pointer hover:bg-black hover:text-white transfom hover:scale-150 duration-300 px-1.5 bg-white border-[1px] border-gray-600 rounded-full"><i class="fa-brands fa-github"></i></div>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 text-gray-600 font-sans  grid grid-cols-2 gap-3 sm:grid-cols-4 ">
+                <div class="company">
+                    <ul><h1 class=" text-black font-semibold py-2">COMPANY</h1>
+                        <li class="py-2">About</li>
+                        <li class="py-2">Features</li>
+                        <li class="py-2">Work</li>
+                        <li class="py-2">Career</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul><h1 class=" text-black font-semibold py-2">HELP</h1>
+                        <li class="py-2">Customer Support</li>
+                        <li class="py-2">Delivery Details</li>
+                        <li class="py-2">Terms & Conditions</li>
+                        <li class="py-2">Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="faq">
+                    <ul><h1 class=" text-black font-semibold py-2">FAQ</h1>
+                        <li class="py-2">Acount</li>
+                        <li class="py-2">Manage Deliveries</li>
+                        <li class="py-2">Orders</li>
+                        <li class="py-2">Payment</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <ul><h1 class=" text-black font-semibold py-2">RESOURCES</h1>
+                        <li class="py-2">Free eBook</li>
+                        <li class="py-2">Development Tutorial</li>
+                        <li class="py-2">How to - Blog</li>
+                        <li class="py-2">Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-500">
+        <div class="w-full lg:w-[90%] xl:w-[80%] mx-auto max-lg:px-5 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-600 text-sm ">Shop.co <i class="fa-solid fa-copyright"></i> 2000-2023, All Rights Reserved</div>
+            <div class="flex gap-4 max-md:flex-wrap max-md:justify-center my-5">
+                <img src="Images/icon_1.png" class="cursor-pointer" alt="">
+                <img src="Images/icon_2.png" class="cursor-pointer" alt="">
+                <img src="Images/icon_3.png" class="cursor-pointer" alt="">
+                <img src="Images/icon_4.png" class="cursor-pointer" alt="">
+                <img src="Images/icon_5.png" class="cursor-pointer" alt="">
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
