@@ -47,3 +47,16 @@ topview.addEventListener("click", () => {
         })
     }
 })
+
+let dd = document.querySelector(".dd")
+let list = document.querySelector(".list")
+
+dd.addEventListener("mouseenter", ()=>{
+    list.style.backgroundColor = 'black';
+    list.style.color = 'white';
+})
+
+dd.addEventListener("mouseleave", ()=>{
+    list.style.backgroundColor = 'white';
+    list.style.color = 'black';
+})
