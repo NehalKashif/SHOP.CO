@@ -34,7 +34,7 @@
     </style>
 </head>
 <body class="bg-black  box-border overflow-x-hidden ">
-    <div class="nav sticky top-0 bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4 max-sm:px-[2%] w-full">
+    <div class="nav z-50 sticky top-0 bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4 max-sm:px-[2%] w-full">
             <div class="flex items-center max-sm:pr-3">
                 <div class="lg:hidden lg:text-4xl">
                     <span class="material-symbols-outlined menu cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400 ">menu</span>
@@ -44,11 +44,11 @@
             <div class="dropdown transform duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 top-[-575%] lg:w-fit w-full flex items-center justify-center">
                 <ul class="flex lg:flex-row flex-col gap-5 font-thin text-gray-700 border-none ">
                     <li class="cursor-pointer dd rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center">
-                        <select name="#" class="border-none list cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
-                            <option class="cursor-pointer border-none text-center" value="#" selected><a href="index.html">Shop</a></option>
-                            <option class="cursor-pointer border-none text-center" value="#">Men</option>
-                            <option class="cursor-pointer border-none text-center" value="#">Women</option>
-                        </select> 
+                    <select name="#" class="border-none list cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
+                        <option class="cursor-pointer border-none text-center" value="#" selected><a href="index.html">Shop</a></option>
+                        <option class="cursor-pointer border-none text-center" value="#">Men</option>
+                        <option class="cursor-pointer border-none text-center" value="#">Women</option>
+                    </select>  
                     </li>
                     <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center"><a href="sale.html">On Sale</a></li>
                     <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center"><a href="#newArrival">New Arrivals</a></li>
@@ -62,7 +62,7 @@
                     <input type="text" class="md:block hidden bg-gray-100 w-0 md:w-full hover:border-none" placeholder="Search for Products...">
                 </div>
                 <div class="">
-                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400">shopping_cart</span>
+                    <a href="cart.html"><span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400">shopping_cart</span></a>
                 </div>
                 <div>
                     <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-black hover:text-white transition-colors duration-400">account_circle</span>
@@ -73,10 +73,10 @@
         
         <div class="flex md:flex-row flex-col max-md:justify-center pt-[2%] px-[6%] gap-5">
             <div class="w-full md:w-1/2 py-10">
-                <p class="text-[1.9rem] sm:text-[2.5rem] lg:text-[2.80rem] xl:text-[3.5rem] titan-one-regular w-[85%] lg:w-[76%] leading-tight">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
-                <p class="w-[80%] text-gray-500 py-2">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                <button class="bg-black text-gray-100 font-thin my-2 py-3 px-12 rounded-full max-md:w-full">Shop Now</button>
-                <div class="flex pt-9 flex-wrap lg:flex-nowrap max-lg:justify-evenly gap-10 xl:gap-16">
+                <p class="text-[1.9rem] sm:text-[2.5rem] lg:text-[2.80rem] xl:text-[3.5rem] titan-one-regular w-[85%] lg:w-[76%] leading-tight animate-fadeRight">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
+                <p class="w-[80%] text-gray-500 py-2  animate-fadeRight  overflow-hidden">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                <button class="bg-black animate-fadeRight text-gray-100 font-thin my-2 py-3 px-12 rounded-full max-md:w-full">Shop Now</button>
+                <div class="flex animate-fadeUp pt-9 flex-wrap lg:flex-nowrap max-lg:justify-evenly gap-10 xl:gap-16">
                     <div>
                         <h1 class="text-xl sm:text-4xl md:text-5xl text-black">200+</h1>
                         <p class="text-gray-500 max-sm:text-[12px]">International Brands</p>
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="w-full md:w-1/2">
-                <img class="w-full h-full xl:w-[100%]" src="Images/main.png" alt="">
+                <img class="w-full h-full xl:w-[100%] animate-fadeUp" src="Images/main.png" alt="">
             </div>
         </div>
         <div class="flex lg:flex-nowrap gap-3 flex-wrap bg-black items-center justify-evenly py-4">
@@ -104,7 +104,7 @@
         </div>
     </div>
     <div id="newArrival" class="NewArival py-20 px-8 lg:px-8 flex flex-col bg-white justify-center items-center">
-        <div class="text-center text-black text-3xl lg:text-4xl titan-one-regular">NEW ARRIVALS</div>
+        <div class="heading text-center text-black text-3xl lg:text-4xl titan-one-regular">NEW ARRIVALS</div>
         <div class="flex py-10 flex-wrap justify-center items-center px-2 lg:px-20">
             <div class="py-5 product1 cursor-pointer px-2 hover:transform hover:scale-110 duration-500 ">
                 <img class="w-[20rem]" src="Images/item_1.png" alt="">
@@ -428,6 +428,7 @@
             </div>
         </div>
     </div>
+    <script src="node_modules/animejs/lib/anime.min.cjs"></script>
     <script src="script.js"></script>
 </body>
 </html>
