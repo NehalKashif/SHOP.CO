@@ -12,6 +12,25 @@ close.addEventListener("click", () => {
     dropdown.classList.add("top-[-575%]")
 })
 
+let p1 = document.querySelector(".p001")
+
+p1.addEventListener("click", ()=>{
+    window.location.href = "product.html"
+})
+
+
+let dd = document.querySelector(".dd")
+let list = document.querySelector(".list")
+
+dd.addEventListener("mouseenter", ()=>{
+    list.style.backgroundColor = 'black';
+    list.style.color = 'white';
+})
+
+dd.addEventListener("mouseleave", ()=>{
+    list.style.backgroundColor = 'white';
+    list.style.color = 'black';
+})
 
 let view = document.querySelector(".view")
     
@@ -46,17 +65,4 @@ topview.addEventListener("click", () => {
             topview.innerText ="View All"
         })
     }
-})
-
-let dd = document.querySelector(".dd")
-let list = document.querySelector(".list")
-
-dd.addEventListener("mouseenter", ()=>{
-    list.style.backgroundColor = 'black';
-    list.style.color = 'white';
-})
-
-dd.addEventListener("mouseleave", ()=>{
-    list.style.backgroundColor = 'white';
-    list.style.color = 'black';
 })

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart</title>
+    <title>SHOP.CO | Sales</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,16 +61,60 @@
             </div>
         </div>
     </div>
-    <div class="layout flex gap-4 py-3 px-[5%] w-full">
+    <div class="layout flex gap-4 py-3 px-[6%] border-y-1 border-gray-500">
         <div class="text-gray-400 text-xl"><a href="index.html">Home</a></div>
         <div class="text-gray-400"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
-        <div class="text-gray-700 text-xl"><a href="cart.html">Cart</a></div>
+        <div class="text-gray-700 text-xl"><a href="product.html">T-Shirts</a></div>
     </div>
-    <div class="main w-full flex flex-col justify-center items-center p-24">
-        <img src="Images/empty-cart.svg" class="w-[20rem]" alt="">
-        <p class="text-black text-xl p-3 font-bold">Nothing in your watchlist</p>
+    <div class="main flex w-full px-[6%] gap-8">
+        <div class="image w-1/2">
+            <img src="Images/item_1.png" class="w-full rounded-3xl" alt="">
+        </div>
+        <div class="info">
+            <p class="font-semibold text-black px-2 titan-one-regular text-4xl">T-Shirt with Tape Details</p>
+            <div class="flex items-center p-2 gap-2 text-gray-600">
+                <img class="w-6" src="Images/ratingstar.png" alt="">
+                <img class="w-6" src="Images/ratingstar.png" alt="">
+                <img class="w-6" src="Images/ratingstar.png" alt="">
+                <img class="w-6" src="Images/ratingstar.png" alt="">
+                <p class="text-lg py-1">4/5</p>
+            </div>
+            <p class="text-4xl text-black font-semibold px-2 py-1">$120</p>
+            <p class="text-gray-600 p-2">a minimalist black short-sleeve t-shirt with a regular fit. The shirt has a simple crew neckline and a small white text logo printed at the center of the chest.</p>
+            <div class="color px-2 py-4 border border-y-gray-200 border-x-white">
+                <p class="text-gray-600 text-md">Select Color</p>
+                <div class="flex gap-2 p-2 text-md text-white ">
+                    <div class="black bg-black rounded-full flex cursor-pointer">
+                        <p class="blackSp w-8 h-8 blackSp" ></p>
+                        <div class="hidden blackTick">
+                            <span class="material-symbols-outlined p-2">check</span>
+                        </div>
+                    </div>
+                    <div class="gray bg-gray-600 rounded-full flex cursor-pointer">
+                        <p class="blackSp w-8 h-8 graySp"></p>
+                        <div class="hidden grayTick">
+                            <span class="material-symbols-outlined p-2">check</span>
+                        </div>
+                    </div>
+                    <div class="white bg-white rounded-full flex cursor-pointer border">
+                        <p class="blackSp w-8 h-8 whiteSp" ></p>
+                        <div class="hidden whiteTick">
+                            <span class="material-symbols-outlined p-2 text-black">check</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="size px-2 py-4 border border-y-gray-200 border-x-white">
+                <p class="text-gray-600 text-md">Choose Size</p>
+                <div class="flex gap-2 p-2 text-md">
+                    <button class="small bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Small</button>
+                    <div class="medium bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Medium</div>
+                    <div class="large bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Large</div>
+                    <div class="x-large bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">X-Large</div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <div class="w-full footer bg-[#f2f2f2] ">
         <div class="w-full lg:w-[90%] xl:w-[80%] bg-black flex flex-col sm:flex-row  md:mx-auto px-8 md:px-14 py-6 rounded-2xl md:gap-[15%] 2xl:gap-[30%] items-center">
             <div class="text-start w-full sm:w-1/2 text-white text-2xl sm:text-3xl p-2 titan-one-regular">
@@ -145,5 +189,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>
