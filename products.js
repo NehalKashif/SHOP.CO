@@ -127,3 +127,18 @@ xlarge.addEventListener("click", ()=>{
     large.classList.remove("bg-black")
     large.classList.remove("text-white")
 })
+
+let add = document.querySelector(".add")
+let remove = document.querySelector(".remove")
+let count = document.querySelector(".count")
+let num = count.textContent
+add.addEventListener("click", ()=>{
+    num++
+    count.textContent = num
+})
+remove.addEventListener("click", ()=>{
+    if(num != 1){
+        num--
+        count.textContent = num
+    }
+})

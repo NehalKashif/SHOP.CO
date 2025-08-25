@@ -24,7 +24,7 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-black  box-border overflow-x-hidden ">
     <div class="nav z-50 sticky top-0 bg-white flex justify-between px-[5%] lg:px-0 lg:justify-evenly items-center py-4 max-sm:px-[2%] w-full">
         <div class="flex items-center max-sm:pr-3">
             <div class="lg:hidden lg:text-4xl">
@@ -61,16 +61,16 @@
             </div>
         </div>
     </div>
-    <div class="layout flex gap-4 py-3 px-[6%] border-y-1 border-gray-500">
+    <div class="layout flex gap-4 py-3 px-[6%] border-y-1 border-gray-500 bg-white">
         <div class="text-gray-400 text-xl"><a href="index.html">Home</a></div>
         <div class="text-gray-400"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
         <div class="text-gray-700 text-xl"><a href="product.html">T-Shirts</a></div>
     </div>
-    <div class="main flex w-full px-[6%] gap-8">
-        <div class="image w-1/2">
+    <div class="main flex bg-white lg:flex-row flex-col w-full px-[6%] gap-8 ">
+        <div class="image xl:w-1/3 lg:w-1/2 w-full">
             <img src="Images/item_1.png" class="w-full rounded-3xl" alt="">
         </div>
-        <div class="info">
+        <div class="info xl:w-2/3 lg:w-1/2 w-full">
             <p class="font-semibold text-black px-2 titan-one-regular text-4xl">T-Shirt with Tape Details</p>
             <div class="flex items-center p-2 gap-2 text-gray-600">
                 <img class="w-6" src="Images/ratingstar.png" alt="">
@@ -106,11 +106,21 @@
             </div>
             <div class="size px-2 py-4 border border-y-gray-200 border-x-white">
                 <p class="text-gray-600 text-md">Choose Size</p>
-                <div class="flex gap-2 p-2 text-md">
+                <div class="flex gap-2 p-2 text-md flex-wrap">
                     <button class="small bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Small</button>
                     <div class="medium bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Medium</div>
                     <div class="large bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Large</div>
                     <div class="x-large bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">X-Large</div>
+                </div>
+            </div>
+            <div class="quantity px-2 py-4 w-full flex justify-start items-center gap-5 max-sm:flex-wrap">
+                <div class="flex gap-2 p-2 text-xl font-bold justify-evenly items-center rounded-full xl:w-1/4 w-full sm:w-1/3 bg-gray-200">
+                    <button class="items-center remove"><span class="material-symbols-outlined">remove</span></button>
+                    <p class="items-center count">1</p>
+                    <button class="items-center add"><span class="material-symbols-outlined">add_2</span></button>
+                </div>
+                <div class="w-full sm:w-2/3 xl:w-2/4">
+                   <button class="bg-black text-gray-100 font-thin my-2 py-3 px-12 rounded-full w-full">Add to Cart</button>
                 </div>
             </div>
         </div>
