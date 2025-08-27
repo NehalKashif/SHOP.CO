@@ -66,12 +66,12 @@
         <div class="text-gray-400"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
         <div class="text-gray-700 text-xl"><a href="product.html">T-Shirts</a></div>
     </div>
-    <div class="main flex bg-white lg:flex-row flex-col w-full px-[6%] gap-8 ">
+    <div class="main p001 flex bg-white lg:flex-row flex-col w-full px-[6%] gap-8 ">
         <div class="image xl:w-1/3 lg:w-1/2 w-full animate-fadeUp lg:animate-fadeRight">
-            <img src="Images/item_1.png" class="w-full rounded-3xl" alt="">
+            <img src="Images/item_1.png" class="img w-full rounded-3xl" alt="">
         </div>
         <div class="info xl:w-2/3 lg:w-1/2 w-full animate-fadeUp lg:animate-fadeLeft">
-            <p class="font-semibold text-black px-2 titan-one-regular text-4xl">T-Shirt with Tape Details</p>
+            <p class="title font-semibold text-black px-2 titan-one-regular text-4xl">T-Shirt with Tape Details</p>
             <div class="flex items-center p-2 gap-2 text-gray-600">
                 <img class="w-6" src="Images/ratingstar.png" alt="">
                 <img class="w-6" src="Images/ratingstar.png" alt="">
@@ -79,11 +79,11 @@
                 <img class="w-6" src="Images/ratingstar.png" alt="">
                 <p class="text-lg py-1">4/5</p>
             </div>
-            <p class="text-4xl text-black font-semibold px-2 py-1">$120</p>
+            <p class="price text-4xl text-black font-semibold px-2 py-1">$120</p>
             <p class="text-gray-600 p-2">a minimalist black short-sleeve t-shirt with a regular fit. The shirt has a simple crew neckline and a small white text logo printed at the center of the chest.</p>
             <div class="color px-2 py-4 border border-y-gray-200 border-x-white">
                 <p class="text-gray-600 text-md">Select Color</p>
-                <div class="flex gap-2 p-2 text-md text-white ">
+                <div class="selectColor flex gap-2 p-2 text-md text-white ">
                     <div class="black bg-black rounded-full flex cursor-pointer">
                         <p class="blackSp w-8 h-8 blackSp" ></p>
                         <div class="hidden blackTick">
@@ -91,13 +91,13 @@
                         </div>
                     </div>
                     <div class="gray bg-gray-600 rounded-full flex cursor-pointer">
-                        <p class="blackSp w-8 h-8 graySp"></p>
+                        <p class="w-8 h-8 graySp"></p>
                         <div class="hidden grayTick">
                             <span class="material-symbols-outlined p-2">check</span>
                         </div>
                     </div>
                     <div class="white bg-white rounded-full flex cursor-pointer border">
-                        <p class="blackSp w-8 h-8 whiteSp" ></p>
+                        <p class="w-8 h-8 whiteSp" ></p>
                         <div class="hidden whiteTick">
                             <span class="material-symbols-outlined p-2 text-black">check</span>
                         </div>
@@ -106,7 +106,7 @@
             </div>
             <div class="size px-2 py-4 border border-y-gray-200 border-x-white">
                 <p class="text-gray-600 text-md">Choose Size</p>
-                <div class="flex gap-2 p-2 text-md flex-wrap">
+                <div class="sizeBtn flex gap-2 p-2 text-md flex-wrap">
                     <button class="small bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Small</button>
                     <div class="medium bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Medium</div>
                     <div class="large bg-gray-200 text-gray-400 px-6 py-2 rounded-full cursor-pointer">Large</div>
@@ -120,7 +120,7 @@
                     <button class="items-center add"><span class="material-symbols-outlined">add_2</span></button>
                 </div>
                 <div class="w-full sm:w-2/3 xl:w-2/4">
-                   <button class="bg-black text-gray-100 font-thin my-2 py-3 px-12 rounded-full w-full">Add to Cart</button>
+                   <button type="button" class="cart bg-black text-gray-100 font-thin my-2 py-3 px-12 rounded-full w-full">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -198,7 +198,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="products.js"></script>
+    <script type="module" src="products.js"></script>
 </body>
 </html>
