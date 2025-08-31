@@ -170,8 +170,6 @@ remove.addEventListener("click", ()=>{
 })
 
 let cartBtn = document.querySelector(".cart")
-
-
 cartBtn.addEventListener("click", ()=>{
     let parent = cartBtn.closest(".main")
     let info = parent.querySelector(".info")
@@ -181,6 +179,7 @@ cartBtn.addEventListener("click", ()=>{
     let price = (info).querySelector(".price").textContent
     let size = ((((parent.querySelector(".info")).querySelector(".size")).querySelector(".sizeBtn")).querySelector(".sizeSelected")).textContent
     let color = info.querySelector(".color").querySelector(".selectColor").querySelector(".colorSelected").classList[0]
-
-    
+    let product = new ProductClass(title, imageSrc, price, size, color)
+    localStorage.setItem("P001", JSON.stringify(product))
+    window.location.href = "cart.html";
 })

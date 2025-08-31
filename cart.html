@@ -36,7 +36,7 @@
             <ul class="flex lg:flex-row flex-col gap-5 font-thin text-gray-700 border-none ">
                 <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center"><a href="index.html">Home</a></li>
                 <li class="cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400 p-3 text-center">
-                    <select name="#" class="border-none cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
+                    <select name="#" class="border-none  cursor-pointer rounded-full hover:bg-black hover:text-white transition-colors duration-400">
                         
                         <option class="cursor-pointer border-none bg-white text-black  hover:bg-black hover:text-white duration-500" value="#" selected><a href="index.html">Shop</a></option>
                         <option class="cursor-pointer border-none bg-white text-black  hover:bg-black hover:text-white duration-500" value="#">Men</option>
@@ -66,9 +66,38 @@
         <div class="text-gray-400"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
         <div class="text-gray-700 text-xl"><a href="cart.html">Cart</a></div>
     </div>
+    <div class="cartList py-3 px-[5%] hidden">
+        <p class="text-black text-3xl lg:text-4xl titan-one-regular">YOUR CART</p>
+    </div>
     <div class="main w-full flex flex-col justify-center items-center p-24">
         <img src="Images/empty-cart.svg" class="w-[20rem]" alt="">
         <p class="text-black text-xl p-3 font-bold">Nothing in your watchlist</p>
+    </div>
+
+    <div class="cartDetails flex gap-5 px-[5%] w-full py-5 hidden">
+        <div class="cartItems w-[65%] border border-gray-300 p-10 rounded-2xl h-fit">
+            
+            
+            
+        </div>
+        <div class="cartPayment w-[35%] h-fit border border-gray-300 p-6 rounded-2xl flex flex-col gap-5">
+            <p class="text-2xl font-bold">Order Summary</p>
+            <div class="totalPrice flex flex-col  gap-2">
+                <div class="flex justify-between items-center text-xl">
+                    <p class="text-gray-600">Subtotal</p>
+                    <p>$<b class="total">0</b></p>
+                </div>
+                <div class="flex justify-between items-center text-xl">
+                    <p class="text-gray-600">Delivery Fee</p>
+                    <p>$<b class="delivery">15</b></p>
+                </div>
+            </div>
+            <div class="grandTotal text-xl flex justify-between items-center border-t-2 py-3">
+                <p class="text-Black">Total</p>
+                <p>$<b class="Gtotal">15</b></p>
+            </div>
+            <button class="bg-black checkout text-gray-100 font-thin my-2 flex items-center justify-center gap-4 py-3 px-12 rounded-full max-md:w-full">Go to Checkout <span class="material-symbols-outlined ">arrow_forward</span></button>
+        </div>
     </div>
 
     <div class="w-full footer bg-[#f2f2f2] ">
@@ -144,6 +173,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    
 </body>
 </html>
