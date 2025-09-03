@@ -27,7 +27,8 @@ if(localStorage.length != 0){
     let size = product.size
     let color = product.color
     let image = product.image
-    let price = product.price
+    let actualprice = product.price
+    let price = actualprice
     console.log(title)
     let item = document.createElement("div")
     item.classList.add(id, "item","w-full", "flex", "py-3")
@@ -42,8 +43,8 @@ if(localStorage.length != 0){
                         <p><b>Color:</b> ${color}</p>
                     </div>
                     <div class="price flex justify-between items-center w-full">
-                        <p class="font-semibold text-2xl">$${price}</p>
-                        <div class="flex gap-2 p-2 text-xl font-bold justify-evenly items-center rounded-full xl:w-1/4 w-full sm:w-1/3 bg-gray-200">
+                        <p class="font-semibold text-2xl">$${actualprice}</p>
+                        <div class="flex gap-2 p-2 text-xl font-bold justify-evenly items-center rounded-full xl:w-1/4 w-1/3 sm:w-1/3 bg-gray-200">
                             <button class="items-center remove"><span class="material-symbols-outlined">remove</span></button>
                             <p class="items-center count">1</p>
                             <button class="items-center add"><span class="material-symbols-outlined">add_2</span></button>
@@ -55,16 +56,6 @@ if(localStorage.length != 0){
     let remove = document.querySelector(".remove")
     let count = document.querySelector(".count")
     let num = count.textContent
-    add.addEventListener("click", ()=>{
-       num++
-       count.textContent = num
-    })
-    remove.addEventListener("click", ()=>{
-        if(num != 1){
-            num--
-            count.textContent = num
-        }
-    })
 
     let total = document.querySelector(".total").textContent
     let grandtotal = document.querySelector(".Gtotal").textContent
@@ -72,6 +63,26 @@ if(localStorage.length != 0){
     document.querySelector(".total").textContent = total
     grandtotal = parseInt(grandtotal) + parseInt(price)
     document.querySelector(".Gtotal").textContent = grandtotal
+    add.addEventListener("click", ()=>{
+       num++
+       count.textContent = num
+       total = parseInt(total)+parseInt(actualprice)
+       grandtotal = parseInt(grandtotal)+parseInt(actualprice)
+       document.querySelector(".total").textContent = total
+       document.querySelector(".Gtotal").textContent = grandtotal
+    })
+    remove.addEventListener("click", ()=>{
+        if(num != 1){
+            num--
+            count.textContent = num
+            total = parseInt(total)-parseInt(actualprice)
+            grandtotal = parseInt(grandtotal)-parseInt(actualprice)
+            document.querySelector(".total").textContent = total
+            document.querySelector(".Gtotal").textContent = grandtotal
+        }
+    })
+
+    
 
     let deleteBtn = document.querySelector(".delete")
     deleteBtn.addEventListener("click", () => {
