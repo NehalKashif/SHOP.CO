@@ -20,6 +20,7 @@ if(localStorage.length != 0){
     cartList.classList.remove("hidden")
     emptyCart.classList.add("hidden")
     cartDetails.classList.remove("hidden")
+    cartDetails.classList.add("flex")
     let i = localStorage.length-1
     let id = localStorage.key(i)
     let product = JSON.parse(localStorage.getItem(id))

@@ -12,10 +12,22 @@ close.addEventListener("click", () => {
     dropdown.classList.add("top-[-575%]")
 })
 
-let p1 = document.querySelector(".p001")
+let product = document.querySelectorAll(".products")
 
-p1.addEventListener("click", ()=>{
-    window.location.href = "product.html"
+product.forEach(p => {
+    p.addEventListener("click", () => {
+        let productClasses = Array.from(p.classList)
+        let productCode = productClasses[2]
+        let colors = productClasses.slice(3, 6)
+        let title = p.children[1].innerText
+        let imgSrc = p.querySelector("img").src
+        let price = p.querySelector(".price").innerText
+        let size = ["Small", "Medium", "Large", "X-Large"]
+        let descrip = p.querySelector(".hidden").innerText
+        let productObj = new ProductClass(title, imgSrc, descrip, price, size, colors)
+        window.location.href = "product.html"
+        localStorage.setItem(productCode, JSON.stringify(productObj))
+    })
 })
 
 
